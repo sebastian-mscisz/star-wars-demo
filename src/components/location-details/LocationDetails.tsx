@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { LocationDetailsUi } from './ui/LocationDetailsUi';
 import { withHandlers } from 'src/hoc';
 import { useCharacters, useLocationDetails } from 'src/hooks';
+import { useNavigate } from 'react-router';
+import { notFoundPagePath } from 'src/common';
 
 const LocationDetailsWithHandlers = withHandlers(LocationDetailsUi);
 
@@ -10,8 +12,13 @@ type LocationDetailsProps = {
 };
 
 export const LocationDetails: React.FC<LocationDetailsProps> = ({ locationId }) => {
-    const { data, isLoading, loadingError } = useLocationDetails(locationId);
+    const navigate = useNavigate();
+    const { data, isLoading, loadingError, hasReceivedResponse } = useLocationDetails(locationId);
     const { data: characters, isLoading: isLoadingCharacters, loadingError: loadingErrorCharacters } = useCharacters();
+
+    useEffect(() => {
+        if (hasReceivedResponse && data === undefined) navigate(notFoundPagePath());
+    }, [hasReceivedResponse, data, navigate]);
 
     return (
         <LocationDetailsWithHandlers
