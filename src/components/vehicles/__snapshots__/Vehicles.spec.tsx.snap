@@ -37,7 +37,7 @@ exports[`Vehicles should render 1`] = `
           >
             <img
               alt="Star wars vehicle"
-              src="/vehicles/1.jpg"
+              src="./vehicles/1.jpg"
             />
           </div>
           <h5
@@ -63,7 +63,7 @@ exports[`Vehicles should render 1`] = `
           >
             <img
               alt="Star wars vehicle"
-              src="/vehicles/2.jpg"
+              src="./vehicles/2.jpg"
             />
           </div>
           <h5
@@ -89,7 +89,7 @@ exports[`Vehicles should render 1`] = `
           >
             <img
               alt="Star wars vehicle"
-              src="/vehicles/3.jpg"
+              src="./vehicles/3.jpg"
             />
           </div>
           <h5
@@ -115,7 +115,7 @@ exports[`Vehicles should render 1`] = `
           >
             <img
               alt="Star wars vehicle"
-              src="/vehicles/4.jpg"
+              src="./vehicles/4.jpg"
             />
           </div>
           <h5
@@ -141,7 +141,7 @@ exports[`Vehicles should render 1`] = `
           >
             <img
               alt="Star wars vehicle"
-              src="/vehicles/5.jpg"
+              src="./vehicles/5.jpg"
             />
           </div>
           <h5

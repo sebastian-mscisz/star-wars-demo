@@ -42,7 +42,7 @@ exports[`LocationsPage should render 1`] = `
           >
             <img
               alt="Star wars planet"
-              src="/locations/1.jpg"
+              src="./locations/1.jpg"
             />
           </div>
         </a>
@@ -68,7 +68,7 @@ exports[`LocationsPage should render 1`] = `
           >
             <img
               alt="Star wars planet"
-              src="/locations/2.jpg"
+              src="./locations/2.jpg"
             />
           </div>
         </a>
@@ -94,7 +94,7 @@ exports[`LocationsPage should render 1`] = `
           >
             <img
               alt="Star wars planet"
-              src="/locations/3.jpg"
+              src="./locations/3.jpg"
             />
           </div>
         </a>
@@ -120,7 +120,7 @@ exports[`LocationsPage should render 1`] = `
           >
             <img
               alt="Star wars planet"
-              src="/locations/4.jpg"
+              src="./locations/4.jpg"
             />
           </div>
         </a>
@@ -146,7 +146,7 @@ exports[`LocationsPage should render 1`] = `
           >
             <img
               alt="Star wars planet"
-              src="/locations/5.jpg"
+              src="./locations/5.jpg"
             />
           </div>
         </a>

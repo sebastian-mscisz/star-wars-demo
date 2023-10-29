@@ -10,7 +10,7 @@ exports[`VehicleDetailsUi should render 1`] = `
     >
       <img
         alt="Star wars vehicle"
-        src="/vehicles/3.jpg"
+        src="./vehicles/3.jpg"
       />
     </div>
     <div

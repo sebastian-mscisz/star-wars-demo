@@ -17,7 +17,7 @@ exports[`Vehicles card should render 1`] = `
         >
           <img
             alt="Star wars vehicle"
-            src="/vehicles/1.jpg"
+            src="./vehicles/1.jpg"
           />
         </div>
         <h5

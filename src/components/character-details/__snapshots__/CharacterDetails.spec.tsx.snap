@@ -13,7 +13,7 @@ exports[`CharacterDetails should render 1`] = `
       >
         <img
           alt="Star wars character"
-          src="/characters/1.jpg"
+          src="./characters/1.jpg"
         />
       </div>
       <h3>

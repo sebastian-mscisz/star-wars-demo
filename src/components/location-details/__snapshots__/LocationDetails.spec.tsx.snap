@@ -17,7 +17,7 @@ exports[`LocationDetails should render 1`] = `
     >
       <img
         alt="Star wars location"
-        src="/locations/2.jpg"
+        src="./locations/2.jpg"
       />
     </div>
     <div

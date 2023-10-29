@@ -22,7 +22,7 @@ exports[`Locations card should render 1`] = `
         >
           <img
             alt="Star wars planet"
-            src="/locations/1.jpg"
+            src="./locations/1.jpg"
           />
         </div>
       </a>
