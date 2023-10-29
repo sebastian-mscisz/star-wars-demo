@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     Characters,
     LocationWithNeighbours,
@@ -8,7 +8,7 @@ import {
 } from 'src/common';
 import './LocationDetailsUi.scss';
 import { NavLink } from 'react-router-dom';
-import { PaginationButtons } from 'src/components';
+import { PaginationButtons, Spinner } from 'src/components';
 
 type LocationDetailsUiProps = {
     location?: LocationWithNeighbours;
@@ -17,6 +17,8 @@ type LocationDetailsUiProps = {
 };
 
 export const LocationDetailsUi: React.FC<LocationDetailsUiProps> = ({ location, locationId, characters }) => {
+    const [imgLoading, setImgLoading] = useState(true);
+
     if (!location) return null;
 
     const residents =
@@ -40,7 +42,14 @@ export const LocationDetailsUi: React.FC<LocationDetailsUiProps> = ({ location, 
                     <h2>{location.name}</h2>
                 </div>
                 <div className="sw-location-detail__image-wrapper">
-                    <img src={`./locations/${locationId}.jpg`} alt="Star wars location" />
+                    <div className={`${imgLoading ? 'sw-location-detail__image-wrapper__display-spinner' : 'sw-location-detail__image-wrapper__hide-spinner'}`}>
+                        <Spinner />
+                    </div>
+                    <img
+                        className={`${imgLoading ? 'sw-location-detail__image-wrapper__hide_img' : ''}`}
+                        src={`./locations/${locationId}.jpg`}
+                        alt="Star wars location"
+                        onLoad={() => setImgLoading(false)} />
                 </div>
                 <div className="sw-location-detail__details">
                     <p>

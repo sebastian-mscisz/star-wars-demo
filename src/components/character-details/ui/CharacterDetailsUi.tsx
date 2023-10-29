@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     CharacterWithNeighbours,
     Locations,
@@ -11,7 +11,7 @@ import {
 } from 'src/common';
 import './CharacterDetailsUi.scss';
 import { NavLink } from 'react-router-dom';
-import { PaginationButtons } from 'src/components';
+import { PaginationButtons, Spinner } from 'src/components';
 
 type CharacterDetailsUiProps = {
     character?: CharacterWithNeighbours;
@@ -28,6 +28,8 @@ export const CharacterDetailsUi: React.FC<CharacterDetailsUiProps> = ({
     species,
     vehicles,
 }) => {
+    console.log("character")
+    const [imgLoading, setImgLoading] = useState(true);
     if (!character) return null;
 
     const originWorld = locations?.find((location) => location.url === character.homeworld) || {
@@ -54,7 +56,15 @@ export const CharacterDetailsUi: React.FC<CharacterDetailsUiProps> = ({
             <div className="sw-character-detail">
                 <div className="sw-character-detail__name">
                     <div className="sw-character-detail__name__image-wrapper">
-                        <img src={`./characters/${characterId}.jpg`} alt="Star wars character" />
+                        <div className={`${imgLoading ? 'sw-character-detail__name__image-wrapper__display-spinner' : 'sw-character-detail__name__image-wrapper__hide-spinner'}`}>
+                            <Spinner />
+                        </div>
+                        <img
+                            className={`${imgLoading ? 'sw-character-detail__name__image-wrapper__hide_img' : ''}`}
+                            src={`./characters/${characterId}.jpg`}
+                            alt="Star wars character"
+                            onLoad={() => setImgLoading(false)}
+                        />
                     </div>
                     <h3>{character.name}</h3>
                 </div>

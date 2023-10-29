@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     Characters,
     VehicleWithNeighbours,
@@ -8,7 +8,7 @@ import {
 } from 'src/common';
 import './VehicleDetailsUi.scss';
 import { NavLink } from 'react-router-dom';
-import { PaginationButtons } from 'src/components';
+import { PaginationButtons, Spinner } from 'src/components';
 
 type VehicleDetailsUiProps = {
     vehicle?: VehicleWithNeighbours;
@@ -17,6 +17,7 @@ type VehicleDetailsUiProps = {
 };
 
 export const VehicleDetailsUi: React.FC<VehicleDetailsUiProps> = ({ vehicle, vehicleId, characters }) => {
+    const [imgLoading, setImgLoading] = useState(true);
     if (!vehicle) return null;
 
     const pilots = characters
@@ -36,7 +37,14 @@ export const VehicleDetailsUi: React.FC<VehicleDetailsUiProps> = ({ vehicle, veh
         <>
             <div className="sw-vehicle-detail">
                 <div className="sw-vehicle-detail__image-wrapper">
-                    <img src={`./vehicles/${vehicleId}.jpg`} alt="Star wars vehicle" />
+                    <div className={`${imgLoading ? 'sw-vehicle-detail__image-wrapper__display-spinner' : 'sw-vehicle-detail__image-wrapper__hide-spinner'}`}>
+                        <Spinner />
+                    </div>
+                    <img
+                        className={`${imgLoading ? 'sw-vehicle-detail__image-wrapper__hide_img' : ''}`}
+                        src={`./vehicles/${vehicleId}.jpg`}
+                        alt="Star wars vehicle"
+                        onLoad={() => setImgLoading(false)} />
                 </div>
                 <div className="sw-vehicle-detail__name">
                     <h2>{vehicle.name}</h2>
