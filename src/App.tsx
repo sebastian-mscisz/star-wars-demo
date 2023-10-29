@@ -1,6 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import {
     CharacterDetailsPage,
     CharactersPage,
@@ -25,7 +25,7 @@ import { store } from './store';
 const App: React.FC = () => {
     return (
         <Provider store={store}>
-            <HashRouter>
+            <BrowserRouter>
                 <MasterPage>
                     <Routes>
                         <Route path={landingPagePath()} element={<Navigate replace to={charactersPagePath()} />} />
@@ -38,7 +38,7 @@ const App: React.FC = () => {
                         <Route path="*" element={<NotFoundPage />} />
                     </Routes>
                 </MasterPage>
-            </HashRouter>
+            </BrowserRouter>
         </Provider>
     );
 };

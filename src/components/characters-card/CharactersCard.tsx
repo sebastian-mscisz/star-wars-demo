@@ -25,17 +25,16 @@ export const CharactersCard: React.FC<CharactersCardProps> = ({ item }) => {
                 >
                     <div className="sw-characters-card__tile__link__image-wrapper">
                         <div
-                            className={`${
-                                imgLoading
+                            className={`${imgLoading
                                     ? 'sw-characters-card__tile__link__image-wrapper__display-spinner'
                                     : 'sw-characters-card__tile__link__image-wrapper__hide-spinner'
-                            }`}
+                                }`}
                         >
                             <Spinner />
                         </div>
                         <img
                             className={`${imgLoading ? 'sw-characters-card__tile__link__image-wrapper__hide_img' : ''}`}
-                            src={`./characters/${getIdFromUrl(url)}.jpg`}
+                            src={`/characters/${getIdFromUrl(url)}.jpg`}
                             alt="Star wars character"
                             onLoad={() => setImgLoading(false)}
                         />

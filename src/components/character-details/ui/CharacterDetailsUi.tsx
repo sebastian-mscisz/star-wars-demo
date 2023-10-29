@@ -56,17 +56,16 @@ export const CharacterDetailsUi: React.FC<CharacterDetailsUiProps> = ({
                 <div className="sw-character-detail__name">
                     <div className="sw-character-detail__name__image-wrapper">
                         <div
-                            className={`${
-                                imgLoading
+                            className={`${imgLoading
                                     ? 'sw-character-detail__name__image-wrapper__display-spinner'
                                     : 'sw-character-detail__name__image-wrapper__hide-spinner'
-                            }`}
+                                }`}
                         >
                             <Spinner />
                         </div>
                         <img
                             className={`${imgLoading ? 'sw-character-detail__name__image-wrapper__hide_img' : ''}`}
-                            src={`./characters/${characterId}.jpg`}
+                            src={`/characters/${characterId}.jpg`}
                             alt="Star wars character"
                             onLoad={() => setImgLoading(false)}
                         />

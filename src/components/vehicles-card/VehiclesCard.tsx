@@ -25,17 +25,16 @@ export const VehiclesCard: React.FC<VehiclesCardProps> = ({ item }) => {
                 >
                     <div className="sw-vehicles-card__tile__link__image-wrapper">
                         <div
-                            className={`${
-                                imgLoading
+                            className={`${imgLoading
                                     ? 'sw-vehicles-card__tile__link__image-wrapper__display-spinner'
                                     : 'sw-vehicles-card__tile__link__image-wrapper__hide-spinner'
-                            }`}
+                                }`}
                         >
                             <Spinner />
                         </div>
                         <img
                             className={`${imgLoading ? 'sw-vehicles-card__tile__link__image-wrapper__hide_img' : ''}`}
-                            src={`./vehicles/${getIdFromUrl(url)}.jpg`}
+                            src={`/vehicles/${getIdFromUrl(url)}.jpg`}
                             alt="Star wars vehicle"
                             onLoad={() => setImgLoading(false)}
                         />
