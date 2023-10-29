@@ -3,13 +3,6 @@ import { withLoadingHandler } from './withLoadingHandler';
 import { BrowserRouter } from 'react-router-dom';
 
 describe('withLoadingHandler', () => {
-    beforeEach(() => {
-        jest.spyOn(global.Math, 'random').mockReturnValue(1);
-    });
-
-    afterEach(() => {
-        jest.spyOn(global.Math, 'random').mockRestore();
-    });
 
     const TestComponent: React.FC = () => {
         return <div>Testing component</div>;

@@ -3,153 +3,302 @@
 exports[`Vehicles should render 1`] = `
 <DocumentFragment>
   <div
-    class="sw-pagination-section"
-    data-testid="pagination-section"
+    class="sw-container__rows-wrapper"
   >
     <div
-      class="sw-pagination-button sw-pagination-button--hidden"
-      data-testid="left-pagination-button"
-    >
-      ←
-    </div>
-    <div
-      class="sw-pagination-button sw-pagination-button--hidden"
-      data-testid="right-pagination-button"
-    >
-      →
-    </div>
-  </div>
-  <div
-    class="sw-vehicles"
-  >
-    <div
-      class="sw-vehicles-card"
+      class="sw-pagination-section"
+      data-testid="pagination-section"
     >
       <div
-        class="sw-vehicles-card__tile"
+        class="sw-pagination-button sw-pagination-button--hidden"
+        data-testid="left-pagination-button"
       >
-        <a
-          class="sw-vehicles-card__tile__link"
-          href="/vehicle/1"
-        >
-          <div
-            class="sw-vehicles-card__tile__link__image-wrapper"
-          >
-            <img
-              alt="Star wars vehicle"
-              src="./vehicles/1.jpg"
-            />
-          </div>
-          <h5
-            class="sw-vehicles-card__tile__link__text"
-          >
-            Vehicle1
-          </h5>
-        </a>
+        ←
+      </div>
+      <div
+        class="sw-pagination-button sw-pagination-button--hidden"
+        data-testid="right-pagination-button"
+      >
+        →
       </div>
     </div>
     <div
-      class="sw-vehicles-card"
+      class="sw-vehicles"
     >
       <div
-        class="sw-vehicles-card__tile"
+        class="sw-vehicles-card"
       >
-        <a
-          class="sw-vehicles-card__tile__link"
-          href="/vehicle/2"
+        <div
+          class="sw-vehicles-card__tile"
         >
-          <div
-            class="sw-vehicles-card__tile__link__image-wrapper"
+          <a
+            class="sw-vehicles-card__tile__link"
+            href="/vehicle/1"
           >
-            <img
-              alt="Star wars vehicle"
-              src="./vehicles/2.jpg"
-            />
-          </div>
-          <h5
-            class="sw-vehicles-card__tile__link__text"
-          >
-            Vehicle2
-          </h5>
-        </a>
+            <div
+              class="sw-vehicles-card__tile__link__image-wrapper"
+            >
+              <div
+                class="sw-vehicles-card__tile__link__image-wrapper__display-spinner"
+              >
+                <div
+                  class="sw-spinner"
+                >
+                  <span
+                    style="display: inherit; position: relative; width: 25px; height: 5px; overflow: hidden; background-color: black; background-clip: padding-box; border-radius: 5px;"
+                  >
+                    <span
+                      style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-long Infinitys  cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;"
+                    />
+                    <span
+                      style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-short Infinitys Infinitys cubic-bezier(0.165, 0.84, 0.44, 1) infinite;"
+                    />
+                  </span>
+                  <span
+                    style="display: inherit; position: relative; width: 100px; height: 5px; overflow: hidden; background-color: rgba(0, 0, 0, 0.2); background-clip: padding-box; border-radius: 5px;"
+                  >
+                    <span
+                      style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-long 2.1s  cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;"
+                    />
+                    <span
+                      style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-short 2.1s 1.15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;"
+                    />
+                  </span>
+                </div>
+              </div>
+              <img
+                alt="Star wars vehicle"
+                class="sw-vehicles-card__tile__link__image-wrapper__hide_img"
+                src="./vehicles/1.jpg"
+              />
+            </div>
+            <h5
+              class="sw-vehicles-card__tile__link__text"
+            >
+              Vehicle1
+            </h5>
+          </a>
+        </div>
       </div>
-    </div>
-    <div
-      class="sw-vehicles-card"
-    >
       <div
-        class="sw-vehicles-card__tile"
+        class="sw-vehicles-card"
       >
-        <a
-          class="sw-vehicles-card__tile__link"
-          href="/vehicle/3"
+        <div
+          class="sw-vehicles-card__tile"
         >
-          <div
-            class="sw-vehicles-card__tile__link__image-wrapper"
+          <a
+            class="sw-vehicles-card__tile__link"
+            href="/vehicle/2"
           >
-            <img
-              alt="Star wars vehicle"
-              src="./vehicles/3.jpg"
-            />
-          </div>
-          <h5
-            class="sw-vehicles-card__tile__link__text"
-          >
-            Vehicle3
-          </h5>
-        </a>
+            <div
+              class="sw-vehicles-card__tile__link__image-wrapper"
+            >
+              <div
+                class="sw-vehicles-card__tile__link__image-wrapper__display-spinner"
+              >
+                <div
+                  class="sw-spinner"
+                >
+                  <span
+                    style="display: inherit; position: relative; width: 25px; height: 5px; overflow: hidden; background-color: black; background-clip: padding-box; border-radius: 5px;"
+                  >
+                    <span
+                      style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-long Infinitys  cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;"
+                    />
+                    <span
+                      style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-short Infinitys Infinitys cubic-bezier(0.165, 0.84, 0.44, 1) infinite;"
+                    />
+                  </span>
+                  <span
+                    style="display: inherit; position: relative; width: 100px; height: 5px; overflow: hidden; background-color: rgba(0, 0, 0, 0.2); background-clip: padding-box; border-radius: 5px;"
+                  >
+                    <span
+                      style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-long 2.1s  cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;"
+                    />
+                    <span
+                      style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-short 2.1s 1.15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;"
+                    />
+                  </span>
+                </div>
+              </div>
+              <img
+                alt="Star wars vehicle"
+                class="sw-vehicles-card__tile__link__image-wrapper__hide_img"
+                src="./vehicles/2.jpg"
+              />
+            </div>
+            <h5
+              class="sw-vehicles-card__tile__link__text"
+            >
+              Vehicle2
+            </h5>
+          </a>
+        </div>
       </div>
-    </div>
-    <div
-      class="sw-vehicles-card"
-    >
       <div
-        class="sw-vehicles-card__tile"
+        class="sw-vehicles-card"
       >
-        <a
-          class="sw-vehicles-card__tile__link"
-          href="/vehicle/4"
+        <div
+          class="sw-vehicles-card__tile"
         >
-          <div
-            class="sw-vehicles-card__tile__link__image-wrapper"
+          <a
+            class="sw-vehicles-card__tile__link"
+            href="/vehicle/3"
           >
-            <img
-              alt="Star wars vehicle"
-              src="./vehicles/4.jpg"
-            />
-          </div>
-          <h5
-            class="sw-vehicles-card__tile__link__text"
-          >
-            Vehicle4
-          </h5>
-        </a>
+            <div
+              class="sw-vehicles-card__tile__link__image-wrapper"
+            >
+              <div
+                class="sw-vehicles-card__tile__link__image-wrapper__display-spinner"
+              >
+                <div
+                  class="sw-spinner"
+                >
+                  <span
+                    style="display: inherit; position: relative; width: 25px; height: 5px; overflow: hidden; background-color: black; background-clip: padding-box; border-radius: 5px;"
+                  >
+                    <span
+                      style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-long Infinitys  cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;"
+                    />
+                    <span
+                      style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-short Infinitys Infinitys cubic-bezier(0.165, 0.84, 0.44, 1) infinite;"
+                    />
+                  </span>
+                  <span
+                    style="display: inherit; position: relative; width: 100px; height: 5px; overflow: hidden; background-color: rgba(0, 0, 0, 0.2); background-clip: padding-box; border-radius: 5px;"
+                  >
+                    <span
+                      style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-long 2.1s  cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;"
+                    />
+                    <span
+                      style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-short 2.1s 1.15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;"
+                    />
+                  </span>
+                </div>
+              </div>
+              <img
+                alt="Star wars vehicle"
+                class="sw-vehicles-card__tile__link__image-wrapper__hide_img"
+                src="./vehicles/3.jpg"
+              />
+            </div>
+            <h5
+              class="sw-vehicles-card__tile__link__text"
+            >
+              Vehicle3
+            </h5>
+          </a>
+        </div>
       </div>
-    </div>
-    <div
-      class="sw-vehicles-card"
-    >
       <div
-        class="sw-vehicles-card__tile"
+        class="sw-vehicles-card"
       >
-        <a
-          class="sw-vehicles-card__tile__link"
-          href="/vehicle/5"
+        <div
+          class="sw-vehicles-card__tile"
         >
-          <div
-            class="sw-vehicles-card__tile__link__image-wrapper"
+          <a
+            class="sw-vehicles-card__tile__link"
+            href="/vehicle/4"
           >
-            <img
-              alt="Star wars vehicle"
-              src="./vehicles/5.jpg"
-            />
-          </div>
-          <h5
-            class="sw-vehicles-card__tile__link__text"
+            <div
+              class="sw-vehicles-card__tile__link__image-wrapper"
+            >
+              <div
+                class="sw-vehicles-card__tile__link__image-wrapper__display-spinner"
+              >
+                <div
+                  class="sw-spinner"
+                >
+                  <span
+                    style="display: inherit; position: relative; width: 25px; height: 5px; overflow: hidden; background-color: black; background-clip: padding-box; border-radius: 5px;"
+                  >
+                    <span
+                      style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-long Infinitys  cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;"
+                    />
+                    <span
+                      style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-short Infinitys Infinitys cubic-bezier(0.165, 0.84, 0.44, 1) infinite;"
+                    />
+                  </span>
+                  <span
+                    style="display: inherit; position: relative; width: 100px; height: 5px; overflow: hidden; background-color: rgba(0, 0, 0, 0.2); background-clip: padding-box; border-radius: 5px;"
+                  >
+                    <span
+                      style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-long 2.1s  cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;"
+                    />
+                    <span
+                      style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-short 2.1s 1.15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;"
+                    />
+                  </span>
+                </div>
+              </div>
+              <img
+                alt="Star wars vehicle"
+                class="sw-vehicles-card__tile__link__image-wrapper__hide_img"
+                src="./vehicles/4.jpg"
+              />
+            </div>
+            <h5
+              class="sw-vehicles-card__tile__link__text"
+            >
+              Vehicle4
+            </h5>
+          </a>
+        </div>
+      </div>
+      <div
+        class="sw-vehicles-card"
+      >
+        <div
+          class="sw-vehicles-card__tile"
+        >
+          <a
+            class="sw-vehicles-card__tile__link"
+            href="/vehicle/5"
           >
-            Vehicle5
-          </h5>
-        </a>
+            <div
+              class="sw-vehicles-card__tile__link__image-wrapper"
+            >
+              <div
+                class="sw-vehicles-card__tile__link__image-wrapper__display-spinner"
+              >
+                <div
+                  class="sw-spinner"
+                >
+                  <span
+                    style="display: inherit; position: relative; width: 25px; height: 5px; overflow: hidden; background-color: black; background-clip: padding-box; border-radius: 5px;"
+                  >
+                    <span
+                      style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-long Infinitys  cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;"
+                    />
+                    <span
+                      style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-short Infinitys Infinitys cubic-bezier(0.165, 0.84, 0.44, 1) infinite;"
+                    />
+                  </span>
+                  <span
+                    style="display: inherit; position: relative; width: 100px; height: 5px; overflow: hidden; background-color: rgba(0, 0, 0, 0.2); background-clip: padding-box; border-radius: 5px;"
+                  >
+                    <span
+                      style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-long 2.1s  cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;"
+                    />
+                    <span
+                      style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-short 2.1s 1.15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;"
+                    />
+                  </span>
+                </div>
+              </div>
+              <img
+                alt="Star wars vehicle"
+                class="sw-vehicles-card__tile__link__image-wrapper__hide_img"
+                src="./vehicles/5.jpg"
+              />
+            </div>
+            <h5
+              class="sw-vehicles-card__tile__link__text"
+            >
+              Vehicle5
+            </h5>
+          </a>
+        </div>
       </div>
     </div>
   </div>

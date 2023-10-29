@@ -28,7 +28,6 @@ export const CharacterDetailsUi: React.FC<CharacterDetailsUiProps> = ({
     species,
     vehicles,
 }) => {
-    console.log("character")
     const [imgLoading, setImgLoading] = useState(true);
     if (!character) return null;
 
