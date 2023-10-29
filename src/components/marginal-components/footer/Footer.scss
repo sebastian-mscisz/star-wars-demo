@@ -1,0 +1,19 @@
+@import 'src/variables';
+
+.sw-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: $footer-height;
+    color: $base-color;
+    width: 100%;
+    border-top: 2px solid $base-color;
+    background-color: #0a0b0b;
+    box-sizing: border-box;
+    margin-top: auto;
+
+    &__text {
+        text-align: center;
+        margin: 0px;
+    }
+}

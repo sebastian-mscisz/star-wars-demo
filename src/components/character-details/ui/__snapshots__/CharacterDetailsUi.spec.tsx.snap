@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterDetailsUi should render 1`] = `
+<DocumentFragment>
+  <div
+    class="sw-character-detail"
+  >
+    <div
+      class="sw-character-detail__name"
+    >
+      <div
+        class="sw-character-detail__name__image-wrapper"
+      >
+        <img
+          alt="Star wars character"
+          src="/characters/3.jpg"
+        />
+      </div>
+      <h3>
+        Character2
+      </h3>
+    </div>
+    <div
+      class="sw-character-detail__details"
+    >
+      <p>
+        <strong>
+          Origin world:
+        </strong>
+         
+        <a
+          class="sw-character-detail__details__link"
+          href="/location/2"
+        >
+          Location2
+        </a>
+      </p>
+      <hr />
+      <p>
+        <strong>
+          Race:
+        </strong>
+         Species2
+      </p>
+      <hr />
+      <p>
+        <strong>
+          Used vehicles:
+        </strong>
+         
+        <a
+          class="sw-character-detail__details__link"
+          href="/vehicle/1"
+        >
+          Vehicle1
+        </a>
+        , 
+        <a
+          class="sw-character-detail__details__link"
+          href="/vehicle/2"
+        >
+          Vehicle2
+        </a>
+      </p>
+    </div>
+  </div>
+  <div
+    class="sw-pagination-section sw-pagination-section--center"
+    data-testid="pagination-section"
+  >
+    <div
+      class="sw-pagination-button "
+      data-testid="left-pagination-button"
+    >
+      ←
+    </div>
+    <div
+      class="sw-pagination-button "
+      data-testid="right-pagination-button"
+    >
+      →
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VehicleDetails should render 1`] = `
+<DocumentFragment>
+  <div
+    class="sw-vehicle-detail"
+  >
+    <div
+      class="sw-vehicle-detail__image-wrapper"
+    >
+      <img
+        alt="Star wars vehicle"
+        src="/vehicles/3.jpg"
+      />
+    </div>
+    <div
+      class="sw-vehicle-detail__name"
+    >
+      <h2>
+        Vehicle3
+      </h2>
+      <p>
+        <strong>
+          Vehicle type:
+        </strong>
+         Water speeder
+      </p>
+    </div>
+    <div
+      class="sw-vehicle-detail__details"
+    >
+      <p>
+        <strong>
+          Famous pilots:
+        </strong>
+         No famous pilots
+      </p>
+    </div>
+  </div>
+  <div
+    class="sw-pagination-section sw-pagination-section--center"
+    data-testid="pagination-section"
+  >
+    <div
+      class="sw-pagination-button "
+      data-testid="left-pagination-button"
+    >
+      ←
+    </div>
+    <div
+      class="sw-pagination-button "
+      data-testid="right-pagination-button"
+    >
+      →
+    </div>
+  </div>
+</DocumentFragment>
+`;

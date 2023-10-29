@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Vehicles card should render 1`] = `
+<DocumentFragment>
+  <div
+    class="sw-vehicles-card"
+  >
+    <div
+      class="sw-vehicles-card__tile"
+    >
+      <a
+        class="sw-vehicles-card__tile__link"
+        href="/vehicle/1"
+      >
+        <div
+          class="sw-vehicles-card__tile__link__image-wrapper"
+        >
+          <img
+            alt="Star wars vehicle"
+            src="/vehicles/1.jpg"
+          />
+        </div>
+        <h5
+          class="sw-vehicles-card__tile__link__text"
+        >
+          Vehicle1
+        </h5>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Characters card should render 1`] = `
+<DocumentFragment>
+  <div
+    class="sw-characters-card"
+  >
+    <div
+      class="sw-characters-card__tile"
+    >
+      <a
+        class="sw-characters-card__tile__link"
+        href="/character/1"
+      >
+        <div
+          class="sw-characters-card__tile__link__image-wrapper"
+        >
+          <img
+            alt="Star wars character"
+            loading="lazy"
+            src="/characters/1.jpg"
+          />
+        </div>
+        <h5
+          class="sw-characters-card__tile__link__text"
+        >
+          Character1
+        </h5>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

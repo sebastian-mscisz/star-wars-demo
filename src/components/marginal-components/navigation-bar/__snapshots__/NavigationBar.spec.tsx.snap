@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation bar should render 1`] = `
+<DocumentFragment>
+  <div
+    class="sw-nav"
+  >
+    <ul
+      class="sw-nav__links"
+    >
+      <li
+        class="sw-nav__links__item"
+      >
+        <a
+          class="sw-nav__links__item__link"
+          href="/characters"
+        >
+          Characters
+        </a>
+      </li>
+      <li
+        class="sw-nav__links__item"
+      >
+        <a
+          class="sw-nav__links__item__link"
+          href="/locations"
+        >
+          Locations
+        </a>
+      </li>
+      <li
+        class="sw-nav__links__item"
+      >
+        <a
+          class="sw-nav__links__item__link"
+          href="/vehicles"
+        >
+          Vehicles
+        </a>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;

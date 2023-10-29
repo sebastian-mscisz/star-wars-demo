@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LocationDetails should render 1`] = `
+<DocumentFragment>
+  <div
+    class="sw-location-detail"
+  >
+    <div
+      class="sw-location-detail__name"
+    >
+      <h2>
+        Location2
+      </h2>
+    </div>
+    <div
+      class="sw-location-detail__image-wrapper"
+    >
+      <img
+        alt="Star wars location"
+        src="/locations/2.jpg"
+      />
+    </div>
+    <div
+      class="sw-location-detail__details"
+    >
+      <p>
+        <strong>
+          Population:
+        </strong>
+         5343
+      </p>
+      <hr />
+      <p>
+        <strong>
+          Residents:
+        </strong>
+         
+        <a
+          class="sw-location-detail__details__link"
+          href="/character/2"
+        >
+          Character2
+        </a>
+      </p>
+    </div>
+  </div>
+  <div
+    class="sw-pagination-section sw-pagination-section--center"
+    data-testid="pagination-section"
+  >
+    <div
+      class="sw-pagination-button "
+      data-testid="left-pagination-button"
+    >
+      ←
+    </div>
+    <div
+      class="sw-pagination-button "
+      data-testid="right-pagination-button"
+    >
+      →
+    </div>
+  </div>
+</DocumentFragment>
+`;

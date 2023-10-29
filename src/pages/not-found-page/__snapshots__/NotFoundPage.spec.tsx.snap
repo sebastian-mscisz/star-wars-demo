@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Not Found Page should render 1`] = `
+<DocumentFragment>
+  <div
+    class="sw-error"
+  >
+    <h1>
+      404 This is not the page you were looking for!
+    </h1>
+    <button
+      class="sw-error__button"
+    >
+      <a
+        aria-current="page"
+        class="active"
+        href="/"
+      >
+        Go home
+      </a>
+    </button>
+  </div>
+</DocumentFragment>
+`;

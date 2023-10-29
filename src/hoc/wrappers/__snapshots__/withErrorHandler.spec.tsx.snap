@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`withErrorHandler should render error component when error is present 1`] = `
+<DocumentFragment>
+  <div
+    class="sw-error"
+  >
+    <h1>
+      500 No connection. Please try again later.
+    </h1>
+    <button
+      class="sw-error__button"
+    >
+      <a
+        aria-current="page"
+        class="active"
+        href="/"
+      >
+        Go home
+      </a>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`withErrorHandler should render wrapped component when no error 1`] = `
+<DocumentFragment>
+  <div>
+    Testing component
+  </div>
+</DocumentFragment>
+`;

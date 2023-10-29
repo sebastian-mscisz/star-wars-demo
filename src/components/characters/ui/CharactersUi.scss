@@ -1,0 +1,27 @@
+@import 'src/variables';
+
+.sw-characters {
+    --gap: 20px;
+    --columns: 7;
+
+    @media screen and (max-width: $xlarge-bp) {
+        --columns: 6;
+    }
+
+    @media screen and (max-width: $large-bp) {
+        --columns: 5;
+    }
+
+    @media screen and (max-width: $medium-bp) {
+        --columns: 4;
+    }
+
+    @media screen and (max-width: $small-bp) {
+        --columns: 3;
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    padding: 20px;
+}

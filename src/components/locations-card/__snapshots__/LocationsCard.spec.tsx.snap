@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Locations card should render 1`] = `
+<DocumentFragment>
+  <div
+    class="sw-locations-card"
+  >
+    <div
+      class="sw-locations-card__tile"
+    >
+      <a
+        class="sw-locations-card__tile__link"
+        href="/location/1"
+      >
+        <h5
+          class="sw-locations-card__tile__link__text"
+        >
+          Location1
+        </h5>
+        <div
+          class="sw-locations-card__tile__link__image-wrapper"
+        >
+          <img
+            alt="Star wars planet"
+            src="/locations/1.jpg"
+          />
+        </div>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

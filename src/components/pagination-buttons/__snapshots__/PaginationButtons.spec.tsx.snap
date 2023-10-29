@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination buttons should render 1`] = `
+<DocumentFragment>
+  <div
+    class="sw-pagination-section"
+    data-testid="pagination-section"
+  >
+    <div
+      class="sw-pagination-button "
+      data-testid="left-pagination-button"
+    >
+      ←
+    </div>
+    <div
+      class="sw-pagination-button "
+      data-testid="right-pagination-button"
+    >
+      →
+    </div>
+  </div>
+</DocumentFragment>
+`;

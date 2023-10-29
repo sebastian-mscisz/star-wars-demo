@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Master Page should render 1`] = `
+<DocumentFragment>
+  <header
+    class="sw-header"
+  >
+    <h2
+      class="sw-header-logo"
+    >
+      STAR WARS
+      <br />
+      DEMOPEDIA
+    </h2>
+    <div
+      class="sw-nav"
+    >
+      <ul
+        class="sw-nav__links"
+      >
+        <li
+          class="sw-nav__links__item"
+        >
+          <a
+            class="sw-nav__links__item__link"
+            href="/characters"
+          >
+            Characters
+          </a>
+        </li>
+        <li
+          class="sw-nav__links__item"
+        >
+          <a
+            class="sw-nav__links__item__link"
+            href="/locations"
+          >
+            Locations
+          </a>
+        </li>
+        <li
+          class="sw-nav__links__item"
+        >
+          <a
+            class="sw-nav__links__item__link"
+            href="/vehicles"
+          >
+            Vehicles
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div
+    class="sw-container"
+  >
+     
+    <p>
+      test component
+    </p>
+  </div>
+  <footer
+    class="sw-footer"
+  >
+    <p
+      class="sw-footer__text"
+    >
+      ©2023 Star Wars Demopedia
+    </p>
+  </footer>
+</DocumentFragment>
+`;

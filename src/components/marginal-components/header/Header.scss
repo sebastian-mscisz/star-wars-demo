@@ -1,0 +1,26 @@
+@import 'src/variables';
+
+.sw-header {
+    min-height: $header-minheight;
+    background-color: $base-background-color;
+    border-right: 2px solid $base-color;
+    flex: 0 0 190px;
+
+    @media screen and (max-width: $small-bp) {
+        flex-basis: 100%;
+        min-height: $header-mobile-minheight;
+        height: $header-mobile-height;
+        border-right: none;
+        border-bottom: 2px solid $base-color;
+    }
+
+    &-logo {
+        color: black;
+        text-shadow:
+            -1px -1px 0 #ffee58,
+            1px -1px 0 #ffee58,
+            -1px 1px 0 #ffee58,
+            1px 1px 0 #ffee58;
+        text-align: center;
+    }
+}

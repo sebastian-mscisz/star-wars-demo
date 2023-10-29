@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`withHandlers should render error component when error is present 1`] = `
+<DocumentFragment>
+  <div
+    class="sw-error"
+  >
+    <h1>
+      500 No connection. Please try again later.
+    </h1>
+    <button
+      class="sw-error__button"
+    >
+      <a
+        aria-current="page"
+        class="active"
+        href="/"
+      >
+        Go home
+      </a>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`withHandlers should render spinner when loading is on 1`] = `
+<DocumentFragment>
+  <div
+    class="sw-spinner"
+  >
+    <span
+      style="display: inherit; position: relative; width: 25px; height: 5px; overflow: hidden; background-color: black; background-clip: padding-box; border-radius: 5px;"
+    >
+      <span
+        style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-long Infinitys  cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;"
+      />
+      <span
+        style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-short Infinitys Infinitys cubic-bezier(0.165, 0.84, 0.44, 1) infinite;"
+      />
+    </span>
+    <span
+      style="display: inherit; position: relative; width: 100px; height: 5px; overflow: hidden; background-color: rgba(0, 0, 0, 0.2); background-clip: padding-box; border-radius: 5px;"
+    >
+      <span
+        style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-long 2.1s  cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;"
+      />
+      <span
+        style="position: absolute; height: 5px; overflow: hidden; background-color: rgb(0, 0, 0); background-clip: padding-box; display: block; border-radius: 2px; will-change: left, right; animation-fill-mode: forwards; animation: react-spinners-BarLoader-short 2.1s 1.15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;"
+      />
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`withHandlers should render with wrapped component correctly 1`] = `
+<DocumentFragment>
+  <div>
+    Testing component
+  </div>
+</DocumentFragment>
+`;

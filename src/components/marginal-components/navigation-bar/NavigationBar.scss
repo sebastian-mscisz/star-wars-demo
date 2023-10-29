@@ -1,0 +1,44 @@
+@import 'src/variables';
+
+.sw-nav {
+    font-size: 1.7rem;
+    font-weight: 700;
+
+    @media screen and (max-width: $small-bp) {
+        font-size: 1.2rem;
+    }
+
+    &__links {
+        list-style: none;
+        padding-left: 30px;
+
+        @media screen and (max-width: $small-bp) {
+            display: flex;
+            padding-left: 0px;
+            justify-content: space-evenly;
+        }
+
+        &__item {
+            padding-top: 10px;
+
+            @media screen and (max-width: $small-bp) {
+                padding-top: 0px;
+            }
+
+            &__link {
+                text-decoration: none;
+                color: #b5b7b7;
+                transition: all 0.3s linear;
+
+                &--active {
+                    text-decoration: underline;
+                    color: #f8f8f8;
+                }
+
+                &:hover {
+                    color: #f8f8f8;
+                }
+            }
+        }
+    }
+}

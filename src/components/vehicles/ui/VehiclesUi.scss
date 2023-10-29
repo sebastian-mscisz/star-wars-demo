@@ -1,0 +1,19 @@
+@import 'src/variables';
+
+.sw-vehicles {
+    --gap: 20px;
+    --columns: 4;
+
+    @media screen and (max-width: $xlarge-bp) {
+        --columns: 3;
+    }
+
+    @media screen and (max-width: $large-bp) {
+        --columns: 2;
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    padding: 20px;
+}

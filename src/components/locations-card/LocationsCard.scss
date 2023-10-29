@@ -1,0 +1,59 @@
+@import 'src/variables';
+
+.sw-locations-card {
+    width: calc((100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns)));
+
+    &__tile {
+        background-color: $base-background-color-light;
+        border-radius: 25% 25% 100% 100%;
+        border: 2px solid $base-color;
+
+        &__link {
+            display: flex;
+            flex-wrap: wrap;
+            text-decoration: none;
+
+            &__image-wrapper {
+                width: 100%;
+                border-radius: 50%;
+                overflow: hidden;
+                transition: all 0.3s linear;
+                border: 2px solid $base-color;
+                aspect-ratio: 1;
+                background-color: $base-background-color;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    transition: all 1s linear;
+                }
+            }
+
+            &__text {
+                font-size: 1.4rem;
+                width: 100%;
+                text-align: center;
+                color: $base-color;
+                transition: all 0.3s linear;
+
+                &:hover {
+                    color: $base-color-light;
+                }
+            }
+        }
+    }
+
+    &:hover &__tile__link {
+        &__image-wrapper {
+            border: 2px solid $base-color-light;
+
+            & img {
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    &:hover &__tile__link__text {
+        color: $base-color-light;
+    }
+}
