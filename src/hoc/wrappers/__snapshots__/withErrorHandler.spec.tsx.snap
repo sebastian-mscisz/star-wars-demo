@@ -3,22 +3,26 @@
 exports[`withErrorHandler should render error component when error is present 1`] = `
 <DocumentFragment>
   <div
-    class="sw-error"
+    class="sw-error-wrapper"
   >
-    <h1>
-      500 No connection. Please try again later.
-    </h1>
-    <button
-      class="sw-error__button"
+    <div
+      class="sw-error-wrapper__content"
     >
-      <a
-        aria-current="page"
-        class="active"
-        href="/"
+      <h1>
+        500 No connection. Please try again later.
+      </h1>
+      <button
+        class="sw-error-wrapper__content__button"
       >
-        Go home
-      </a>
-    </button>
+        <a
+          aria-current="page"
+          class="active"
+          href="/"
+        >
+          Go home
+        </a>
+      </button>
+    </div>
   </div>
 </DocumentFragment>
 `;

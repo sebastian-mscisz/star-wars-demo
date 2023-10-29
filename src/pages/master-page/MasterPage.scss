@@ -8,12 +8,4 @@
     justify-content: center;
     align-content: flex-start;
     margin-bottom: 25px;
-
-    &:has(.sw-spinner),
-    &:has(.sw-error),
-    &:has(.sw-location-detail),
-    &:has(.sw-character-detail),
-    &:has(.sw-vehicle-detail) {
-        align-content: center;
-    }
 }
