@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { CharacterDetailsUi } from './ui/CharacterDetailsUi';
 import { withHandlers } from 'src/hoc';
 import { useCharacterDetails, useLocations, useSpecies, useVehicles } from 'src/hooks';
+import { useNavigate } from 'react-router';
+import { notFoundPagePath } from 'src/common';
 
 const CharacterDetailsWithHandlers = withHandlers(CharacterDetailsUi);
 
@@ -10,10 +12,15 @@ type CharacterDetailsProps = {
 };
 
 export const CharacterDetails: React.FC<CharacterDetailsProps> = ({ characterId }) => {
-    const { data: character, isLoading, loadingError } = useCharacterDetails(characterId);
+    const navigate = useNavigate();
+    const { data: character, isLoading, loadingError, hasReceivedResponse } = useCharacterDetails(characterId);
     const { data: locations, isLoading: isLoadingLocations, loadingError: loadingErrorLocations } = useLocations();
     const { data: vehicles, isLoading: isLoadingVehicles, loadingError: loadingErrorVehicles } = useVehicles();
     const { data: species, isLoading: isLoadingSpecies, loadingError: loadingErrorSpecies } = useSpecies();
+
+    useEffect(() => {
+        if (hasReceivedResponse && character === undefined) navigate(notFoundPagePath());
+    }, [hasReceivedResponse, character, navigate]);
 
     return (
         <CharacterDetailsWithHandlers
