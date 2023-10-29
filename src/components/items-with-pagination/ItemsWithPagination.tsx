@@ -19,7 +19,6 @@ export const ItemsWithPagination: React.FC<ItemsWithPaginationProps> = ({
     className,
     CardComponent,
 }) => {
-
     const itemsLine = items.map((item, i) => <CardComponent item={item} key={i} />);
 
     const numberOfPages = Math.floor(itemsLine.length / itemsPerPage);
@@ -39,7 +38,7 @@ export const ItemsWithPagination: React.FC<ItemsWithPaginationProps> = ({
         ));
 
     return (
-        <div className='sw-container__rows-wrapper'>
+        <div className="sw-container__rows-wrapper">
             <PaginationButtons
                 hideLeft={currentPageId === 1}
                 hideRight={currentPageId === numberOfPages + (itemsOnLastPage ? 1 : 0)}

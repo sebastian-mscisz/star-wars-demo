@@ -55,7 +55,13 @@ export const CharacterDetailsUi: React.FC<CharacterDetailsUiProps> = ({
             <div className="sw-character-detail">
                 <div className="sw-character-detail__name">
                     <div className="sw-character-detail__name__image-wrapper">
-                        <div className={`${imgLoading ? 'sw-character-detail__name__image-wrapper__display-spinner' : 'sw-character-detail__name__image-wrapper__hide-spinner'}`}>
+                        <div
+                            className={`${
+                                imgLoading
+                                    ? 'sw-character-detail__name__image-wrapper__display-spinner'
+                                    : 'sw-character-detail__name__image-wrapper__hide-spinner'
+                            }`}
+                        >
                             <Spinner />
                         </div>
                         <img

@@ -3,7 +3,6 @@ import { withLoadingHandler } from './withLoadingHandler';
 import { BrowserRouter } from 'react-router-dom';
 
 describe('withLoadingHandler', () => {
-
     const TestComponent: React.FC = () => {
         return <div>Testing component</div>;
     };

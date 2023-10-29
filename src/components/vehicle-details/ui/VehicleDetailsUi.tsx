@@ -37,14 +37,21 @@ export const VehicleDetailsUi: React.FC<VehicleDetailsUiProps> = ({ vehicle, veh
         <>
             <div className="sw-vehicle-detail">
                 <div className="sw-vehicle-detail__image-wrapper">
-                    <div className={`${imgLoading ? 'sw-vehicle-detail__image-wrapper__display-spinner' : 'sw-vehicle-detail__image-wrapper__hide-spinner'}`}>
+                    <div
+                        className={`${
+                            imgLoading
+                                ? 'sw-vehicle-detail__image-wrapper__display-spinner'
+                                : 'sw-vehicle-detail__image-wrapper__hide-spinner'
+                        }`}
+                    >
                         <Spinner />
                     </div>
                     <img
                         className={`${imgLoading ? 'sw-vehicle-detail__image-wrapper__hide_img' : ''}`}
                         src={`./vehicles/${vehicleId}.jpg`}
                         alt="Star wars vehicle"
-                        onLoad={() => setImgLoading(false)} />
+                        onLoad={() => setImgLoading(false)}
+                    />
                 </div>
                 <div className="sw-vehicle-detail__name">
                     <h2>{vehicle.name}</h2>

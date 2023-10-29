@@ -24,7 +24,13 @@ export const CharactersCard: React.FC<CharactersCardProps> = ({ item }) => {
                     to={characterDetailsPagePath(getIdFromUrl(url))}
                 >
                     <div className="sw-characters-card__tile__link__image-wrapper">
-                        <div className={`${imgLoading ? 'sw-characters-card__tile__link__image-wrapper__display-spinner' : 'sw-characters-card__tile__link__image-wrapper__hide-spinner'}`}>
+                        <div
+                            className={`${
+                                imgLoading
+                                    ? 'sw-characters-card__tile__link__image-wrapper__display-spinner'
+                                    : 'sw-characters-card__tile__link__image-wrapper__hide-spinner'
+                            }`}
+                        >
                             <Spinner />
                         </div>
                         <img

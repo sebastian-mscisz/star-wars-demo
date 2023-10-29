@@ -42,14 +42,21 @@ export const LocationDetailsUi: React.FC<LocationDetailsUiProps> = ({ location, 
                     <h2>{location.name}</h2>
                 </div>
                 <div className="sw-location-detail__image-wrapper">
-                    <div className={`${imgLoading ? 'sw-location-detail__image-wrapper__display-spinner' : 'sw-location-detail__image-wrapper__hide-spinner'}`}>
+                    <div
+                        className={`${
+                            imgLoading
+                                ? 'sw-location-detail__image-wrapper__display-spinner'
+                                : 'sw-location-detail__image-wrapper__hide-spinner'
+                        }`}
+                    >
                         <Spinner />
                     </div>
                     <img
                         className={`${imgLoading ? 'sw-location-detail__image-wrapper__hide_img' : ''}`}
                         src={`./locations/${locationId}.jpg`}
                         alt="Star wars location"
-                        onLoad={() => setImgLoading(false)} />
+                        onLoad={() => setImgLoading(false)}
+                    />
                 </div>
                 <div className="sw-location-detail__details">
                     <p>

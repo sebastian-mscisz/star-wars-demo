@@ -24,7 +24,13 @@ export const VehiclesCard: React.FC<VehiclesCardProps> = ({ item }) => {
                     to={vehicleDetailsPagePath(getIdFromUrl(url))}
                 >
                     <div className="sw-vehicles-card__tile__link__image-wrapper">
-                        <div className={`${imgLoading ? 'sw-vehicles-card__tile__link__image-wrapper__display-spinner' : 'sw-vehicles-card__tile__link__image-wrapper__hide-spinner'}`}>
+                        <div
+                            className={`${
+                                imgLoading
+                                    ? 'sw-vehicles-card__tile__link__image-wrapper__display-spinner'
+                                    : 'sw-vehicles-card__tile__link__image-wrapper__hide-spinner'
+                            }`}
+                        >
                             <Spinner />
                         </div>
                         <img

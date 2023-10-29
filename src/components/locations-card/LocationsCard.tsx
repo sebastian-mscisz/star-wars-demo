@@ -25,14 +25,21 @@ export const LocationsCard: React.ElementType<LocationsCardProps> = ({ item }) =
                 >
                     <h5 className="sw-locations-card__tile__link__text">{name}</h5>
                     <div className="sw-locations-card__tile__link__image-wrapper">
-                        <div className={`${imgLoading ? 'sw-locations-card__tile__link__image-wrapper__display-spinner' : 'sw-vehicles-card__tile__link__image-wrapper__hide-spinner'}`}>
+                        <div
+                            className={`${
+                                imgLoading
+                                    ? 'sw-locations-card__tile__link__image-wrapper__display-spinner'
+                                    : 'sw-vehicles-card__tile__link__image-wrapper__hide-spinner'
+                            }`}
+                        >
                             <Spinner />
                         </div>
                         <img
                             className={`${imgLoading ? 'sw-locations-card__tile__link__image-wrapper__hide_img' : ''}`}
                             src={`./locations/${getIdFromUrl(url)}.jpg`}
                             alt="Star wars planet"
-                            onLoad={() => setImgLoading(false)} />
+                            onLoad={() => setImgLoading(false)}
+                        />
                     </div>
                 </NavLink>
             </div>
