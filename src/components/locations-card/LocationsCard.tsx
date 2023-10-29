@@ -22,7 +22,7 @@ export const LocationsCard: React.ElementType<LocationsCardProps> = ({ item }) =
                 >
                     <h5 className="sw-locations-card__tile__link__text">{name}</h5>
                     <div className="sw-locations-card__tile__link__image-wrapper">
-                        <img src={`/locations/${getIdFromUrl(url)}.jpg`} alt="Star wars planet" />
+                        <img src={`./locations/${getIdFromUrl(url)}.jpg`} alt="Star wars planet" />
                     </div>
                 </NavLink>
             </div>

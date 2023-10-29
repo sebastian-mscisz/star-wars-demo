@@ -36,7 +36,7 @@ export const VehicleDetailsUi: React.FC<VehicleDetailsUiProps> = ({ vehicle, veh
         <>
             <div className="sw-vehicle-detail">
                 <div className="sw-vehicle-detail__image-wrapper">
-                    <img src={`/vehicles/${vehicleId}.jpg`} alt="Star wars vehicle" />
+                    <img src={`./vehicles/${vehicleId}.jpg`} alt="Star wars vehicle" />
                 </div>
                 <div className="sw-vehicle-detail__name">
                     <h2>{vehicle.name}</h2>

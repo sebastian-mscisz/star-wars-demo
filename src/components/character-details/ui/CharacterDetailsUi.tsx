@@ -54,7 +54,7 @@ export const CharacterDetailsUi: React.FC<CharacterDetailsUiProps> = ({
             <div className="sw-character-detail">
                 <div className="sw-character-detail__name">
                     <div className="sw-character-detail__name__image-wrapper">
-                        <img src={`/characters/${characterId}.jpg`} alt="Star wars character" />
+                        <img src={`./characters/${characterId}.jpg`} alt="Star wars character" />
                     </div>
                     <h3>{character.name}</h3>
                 </div>

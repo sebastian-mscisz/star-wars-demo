@@ -40,7 +40,7 @@ export const LocationDetailsUi: React.FC<LocationDetailsUiProps> = ({ location, 
                     <h2>{location.name}</h2>
                 </div>
                 <div className="sw-location-detail__image-wrapper">
-                    <img src={`/locations/${locationId}.jpg`} alt="Star wars location" />
+                    <img src={`./locations/${locationId}.jpg`} alt="Star wars location" />
                 </div>
                 <div className="sw-location-detail__details">
                     <p>

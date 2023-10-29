@@ -21,7 +21,7 @@ export const VehiclesCard: React.FC<VehiclesCardProps> = ({ item }) => {
                     to={vehicleDetailsPagePath(getIdFromUrl(url))}
                 >
                     <div className="sw-vehicles-card__tile__link__image-wrapper">
-                        <img src={`/vehicles/${getIdFromUrl(url)}.jpg`} alt="Star wars vehicle" />
+                        <img src={`./vehicles/${getIdFromUrl(url)}.jpg`} alt="Star wars vehicle" />
                     </div>
                     <h5 className="sw-vehicles-card__tile__link__text">{name}</h5>
                 </NavLink>

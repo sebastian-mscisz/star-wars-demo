@@ -21,7 +21,7 @@ export const CharactersCard: React.FC<CharactersCardProps> = ({ item }) => {
                     to={characterDetailsPagePath(getIdFromUrl(url))}
                 >
                     <div className="sw-characters-card__tile__link__image-wrapper">
-                        <img loading="lazy" src={`/characters/${getIdFromUrl(url)}.jpg`} alt="Star wars character" />
+                        <img loading="lazy" src={`./characters/${getIdFromUrl(url)}.jpg`} alt="Star wars character" />
                     </div>
                     <h5 className="sw-characters-card__tile__link__text">{name}</h5>
                 </NavLink>
