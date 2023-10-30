@@ -42,7 +42,7 @@ exports[`CharacterDetailsPage should render 1`] = `
         <img
           alt="Star wars character"
           class="sw-character-detail__name__image-wrapper__hide_img"
-          src="./characters/4.jpg"
+          src="/characters/4.jpg"
         />
       </div>
       <h3>

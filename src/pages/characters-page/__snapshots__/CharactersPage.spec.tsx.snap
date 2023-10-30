@@ -69,7 +69,7 @@ exports[`CharactersPage should render 1`] = `
               <img
                 alt="Star wars character"
                 class="sw-characters-card__tile__link__image-wrapper__hide_img"
-                src="./characters/1.jpg"
+                src="/characters/1.jpg"
               />
             </div>
             <h5
@@ -124,7 +124,7 @@ exports[`CharactersPage should render 1`] = `
               <img
                 alt="Star wars character"
                 class="sw-characters-card__tile__link__image-wrapper__hide_img"
-                src="./characters/2.jpg"
+                src="/characters/2.jpg"
               />
             </div>
             <h5
@@ -179,7 +179,7 @@ exports[`CharactersPage should render 1`] = `
               <img
                 alt="Star wars character"
                 class="sw-characters-card__tile__link__image-wrapper__hide_img"
-                src="./characters/3.jpg"
+                src="/characters/3.jpg"
               />
             </div>
             <h5
@@ -234,7 +234,7 @@ exports[`CharactersPage should render 1`] = `
               <img
                 alt="Star wars character"
                 class="sw-characters-card__tile__link__image-wrapper__hide_img"
-                src="./characters/4.jpg"
+                src="/characters/4.jpg"
               />
             </div>
             <h5
@@ -289,7 +289,7 @@ exports[`CharactersPage should render 1`] = `
               <img
                 alt="Star wars character"
                 class="sw-characters-card__tile__link__image-wrapper__hide_img"
-                src="./characters/5.jpg"
+                src="/characters/5.jpg"
               />
             </div>
             <h5

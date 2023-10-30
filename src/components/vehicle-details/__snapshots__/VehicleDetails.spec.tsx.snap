@@ -39,7 +39,7 @@ exports[`VehicleDetails should render 1`] = `
       <img
         alt="Star wars vehicle"
         class="sw-vehicle-detail__image-wrapper__hide_img"
-        src="./vehicles/3.jpg"
+        src="/vehicles/3.jpg"
       />
     </div>
     <div

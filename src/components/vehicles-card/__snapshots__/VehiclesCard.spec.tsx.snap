@@ -46,7 +46,7 @@ exports[`Vehicles card should render 1`] = `
           <img
             alt="Star wars vehicle"
             class="sw-vehicles-card__tile__link__image-wrapper__hide_img"
-            src="./vehicles/1.jpg"
+            src="/vehicles/1.jpg"
           />
         </div>
         <h5

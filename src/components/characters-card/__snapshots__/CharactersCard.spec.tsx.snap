@@ -46,7 +46,7 @@ exports[`Characters card should render 1`] = `
           <img
             alt="Star wars character"
             class="sw-characters-card__tile__link__image-wrapper__hide_img"
-            src="./characters/1.jpg"
+            src="/characters/1.jpg"
           />
         </div>
         <h5

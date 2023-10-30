@@ -46,7 +46,7 @@ exports[`LocationDetails should render 1`] = `
       <img
         alt="Star wars location"
         class="sw-location-detail__image-wrapper__hide_img"
-        src="./locations/2.jpg"
+        src="/locations/2.jpg"
       />
     </div>
     <div
